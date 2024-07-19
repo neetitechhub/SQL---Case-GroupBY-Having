@@ -28,6 +28,26 @@ INSERT [dbo].[Orders] ([Id], [CustomerId], [OrderDate], [Country], [Amount], [Pr
 INSERT [dbo].[Orders] ([Id], [CustomerId], [OrderDate], [Country], [Amount], [ProductId]) VALUES (7, 105, CAST(N'1905-06-17T00:00:00.000' AS DateTime), N'USA', 100, 3)
 GO
 
+-------------------------------
+CREATE TABLE [dbo].[Employee_test](
+	[ID] [int] NULL,
+	[FirstName] [varchar](250) NULL,
+	[LastName] [varchar](250) NULL,
+	[Salary] [int] NULL,
+	[Managerid] [int] NULL,
+	[Gender] [varchar](250) NULL,
+	[deptName] [varchar](250) NULL,
+	[IsActive] [bit] NULL,
+	[hiredate] [datetime] NULL,
+	[DOB] [datetime] NULL
+) 
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (1, N'Alice', N'Kizor', 1000, 2, N'F', N'IT', 1, CAST(N'2023-01-01T00:00:00.000' AS DateTime), NULL)
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (2, N'Bob', N'Warry', 200, 1, N'M', N'HR', 1, CAST(N'2023-02-02T00:00:00.000' AS DateTime), NULL)
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (3, N'Nayan', N'Pandey', 100, 1, N'M', N'Admin', 1, CAST(N'2023-02-02T00:00:00.000' AS DateTime), NULL)
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (4, N'Rohit', N'Singh', 888, 2, N'M', N'Account', 1, CAST(N'2023-02-02T00:00:00.000' AS DateTime), NULL)
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (5, N'Rahul', N'Shukla', 10000, 3, N'M', N'HR', 1, CAST(N'2023-02-02T00:00:00.000' AS DateTime), NULL)
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (6, N'Ankit', N'Tiwari', 6000, 4, N'M', N'IT', 1, CAST(N'2023-02-02T00:00:00.000' AS DateTime), NULL)
+INSERT [dbo].[Employee_test] ([ID], [FirstName], [LastName], [Salary], [Managerid], [Gender], [deptName], [IsActive], [hiredate], [DOB]) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 **/
 --QUESTIONS :
   --1. SORT EMPLOYEE BY DEPARTMENT WHERE HR SHOULD BE ON TOP THEN IT AFTER THAT OTHERS (CUSTOM SORTING)
